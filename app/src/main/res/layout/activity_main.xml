@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:layout_margin="20dp"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvEcran"
+        style="@style/Ecran"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_columnSpan="4"
+        android:text="" />
+
+    <RadioGroup
+        style="@style/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rbtEuros"
+        style="@style/radioButton"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="€" />
+
+    <RadioButton
+        android:id="@+id/rbtDollars"
+        style="@style/radioButton"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:text="$" />
+
+    <RadioButton
+        android:id="@+id/rbtLire"
+        style="@style/radioButton"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:text="£" />
+
+    <RadioButton
+        android:id="@+id/rbtBitcoin"
+        style="@style/radioButton"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="3"
+        android:text="B" />
+    </RadioGroup>
+
+    <RadioGroup
+        style="@style/radioGroup"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rbtDegre"
+            style="@style/radioButton"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="deg" />
+
+        <RadioButton
+            android:id="@+id/rbtRadian"
+            style="@style/radioButton"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="rad" />
+
+        <RadioButton
+            android:id="@+id/rbtGrd"
+            style="@style/radioButton"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="grd" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btClear"
+        style="@style/calcButtons"
+        android:layout_width="160dp"
+        android:layout_columnSpan="2"
+        android:text="effacer"
+        android:onClick="effacer"/>
+
+    <Button
+        android:id="@+id/btSlash"
+        style="@style/greysButtons"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:layout_column="3"
+        android:background="#616060"
+        android:text="/"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btSeven"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btHeight"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btNine"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btStar"
+        style="@style/greysButtons"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:background="#616060"
+        android:text="*"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btFour"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btFive"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btSix"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btUnder"
+        style="@style/greysButtons"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:background="#616060"
+        android:text="-"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btOne"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btTwo"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btThree"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btMore"
+        style="@style/greysButtons"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:background="#616060"
+        android:text="+"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btZero"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btDot"
+        style="@style/calcButtons"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/btResult"
+        style="@style/greysButtons"
+        android:layout_width="160dp"
+        android:layout_height="39dp"
+        android:layout_columnSpan="2"
+        android:background="#616060"
+        android:text="Resultat" />
+
+
+
+
+</GridLayout>
